@@ -15,7 +15,10 @@ class MyApp extends StatelessWidget {
       home: BlocBuilder<RemoteConfigBloc, RemoteConfigState>(
         builder: (context, state) {
           if (state is RemoteConfigDataFetch) {
-            return Scaffold(body: Center(child: Text("Data-> ${state.data}")));
+            return Scaffold(
+              appBar: AppBar(title: Text('Remote Config Demo')),
+              body: Center(child: Text("Data-> ${state.data}")),
+            );
           } else if (state is RemoteConfigInitial) {
             return Scaffold(body: Center(child: CircularProgressIndicator()));
           } else {

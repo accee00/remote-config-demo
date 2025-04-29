@@ -6,6 +6,8 @@ class Intialise {
   Intialise(this._repository);
 
   Future<void> call() async {
-    return _repository.initialize();
+    return _repository.initialize(defaultVal());
   }
 }
+
+Map<String, dynamic> defaultVal() => {'product': 'Soap'};

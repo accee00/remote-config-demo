@@ -11,7 +11,7 @@ class RemoteConfigRepoimpl extends RemoteConfigRepo {
   }
 
   @override
-  Future<void> initialize() async {
-    return remoteConfigDataSource.initialize({'product': 'oooap'});
+  Future<void> initialize(Map<String, dynamic> map) async {
+    return remoteConfigDataSource.initialize(map);
   }
 }
