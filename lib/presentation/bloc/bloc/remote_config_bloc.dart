@@ -15,8 +15,9 @@ class RemoteConfigBloc extends Bloc<RemoteConfigEvent, RemoteConfigState> {
       await intialise.call();
       emit(RemoteConfigLoading());
       try {
-        final res = await getStringValueUseCase.call('product');
-        emit(RemoteConfigDataFetch(data: res));
+        final productName = await getStringValueUseCase.call('product');
+
+        emit(RemoteConfigDataFetch(productName: productName));
       } catch (e) {
         emit(RemoteConfigError('Failed to fetch data'));
       }

@@ -12,9 +12,7 @@ Future<void> main() async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(
     MultiBlocProvider(
-      providers: [
-        BlocProvider(create: (_) => getIt<RemoteConfigBloc>()..add(GetData())),
-      ],
+      providers: [BlocProvider(create: (_) => getIt<RemoteConfigBloc>())],
       child: MyApp(),
     ),
   );

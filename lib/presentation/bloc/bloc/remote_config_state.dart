@@ -7,8 +7,8 @@ sealed class RemoteConfigState {}
 class RemoteConfigInitial extends RemoteConfigState {}
 
 class RemoteConfigDataFetch extends RemoteConfigState {
-  final String data;
-  RemoteConfigDataFetch({required this.data});
+  final String productName;
+  RemoteConfigDataFetch({required this.productName});
 }
 
 class RemoteConfigLoading extends RemoteConfigState {}
