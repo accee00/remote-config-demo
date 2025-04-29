@@ -36,31 +36,42 @@ It uses GetIt for dependency injection and follows best practices for production
 Clone this repo:
 
                         git clone https://github.com/your-username/remote_config_demo.git
-                        
+
                         cd remote_config_demo
 
 Install Flutter packages:
+
                         flutter pub get
+
                         Setup Firebase:
+
 
 Make sure Remote Config is enabled in Firebase Console.
 
 Run the app:
+
                         flutter run
                         
 🔥 Important Notes
+
     - WidgetsFlutterBinding.ensureInitialized() is called before Firebase initialization.
     - Fetch interval is set to 0 seconds during development for easier testing.
     - Proper error handling is implemented to prevent app crashes if fetch fails.
     - Remote Config keys must exist in Firebase console or defaults will be used.
 
+
 📦 Dependencies Used
+
                         firebase_core
+
                         firebase_remote_config
+
                         flutter_bloc
+
                         get_it
 
 👨‍💻 Author
+
 Harshvardhan
 
-🚀 Happy Coding!
+🚀 Happy Codinggggg!
