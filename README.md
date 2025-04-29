@@ -32,8 +32,11 @@ It uses GetIt for dependency injection and follows best practices for production
                         ├── main.dart          # App entry point
                         
 🛠️ Setup Instructions
+
 Clone this repo:
+
                         git clone https://github.com/your-username/remote_config_demo.git
+                        
                         cd remote_config_demo
 
 Install Flutter packages:
