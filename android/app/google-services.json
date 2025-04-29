@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "113393532385",
+    "project_id": "remote-config-demo-eae5f",
+    "storage_bucket": "remote-config-demo-eae5f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113393532385:android:89923c941d3c0d10b4e6a0",
+        "android_client_info": {
+          "package_name": "com.example.remote_config_demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByDr_R89BY6aelanWTTYPKO_jc7tcEAGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
